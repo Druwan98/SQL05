@@ -17,6 +17,15 @@ public class Student {
     public String getSurname(String surname) {
         return surname;
     }
+
+    @Override
+    public String toString() {
+        final StringBuffer sb = new StringBuffer("Student{");
+        sb.append("name='").append(name).append('\'');
+        sb.append(", surname='").append(surname).append('\'');
+        sb.append('}');
+        return sb.toString();
+    }
 }
 
 
